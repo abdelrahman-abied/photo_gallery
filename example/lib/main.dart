@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:photo_gallery_plus/photo_gallery.dart';
+import 'package:photo_gallery_plus/photo_gallery_plus.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:video_player/video_player.dart';
 
@@ -43,15 +43,13 @@ class _MyAppState extends State<MyApp> {
 
   Future<bool> _promptPermissionSetting() async {
     if (Platform.isIOS) {
-      if (await Permission.photos.request().isGranted ||
-          await Permission.storage.request().isGranted) {
+      if (await Permission.photos.request().isGranted || await Permission.storage.request().isGranted) {
         return true;
       }
     }
     if (Platform.isAndroid) {
       if (await Permission.storage.request().isGranted ||
-          await Permission.photos.request().isGranted &&
-              await Permission.videos.request().isGranted) {
+          await Permission.photos.request().isGranted && await Permission.videos.request().isGranted) {
         return true;
       }
     }
@@ -99,8 +97,7 @@ class _MyAppState extends State<MyApp> {
                                     width: gridWidth,
                                     child: FadeInImage(
                                       fit: BoxFit.cover,
-                                      placeholder:
-                                          MemoryImage(kTransparentImage),
+                                      placeholder: MemoryImage(kTransparentImage),
                                       image: AlbumThumbnailProvider(
                                         album: album,
                                         highQuality: true,
@@ -312,9 +309,7 @@ class _VideoProviderState extends State<VideoProvider> {
               TextButton(
                 onPressed: () {
                   setState(() {
-                    _controller!.value.isPlaying
-                        ? _controller!.pause()
-                        : _controller!.play();
+                    _controller!.value.isPlaying ? _controller!.pause() : _controller!.play();
                   });
                 },
                 child: Icon(

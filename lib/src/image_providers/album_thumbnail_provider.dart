@@ -1,4 +1,4 @@
-part of '../../photo_gallery.dart';
+part of '../../photo_gallery_plus.dart';
 
 /// Fetches the given album thumbnail from the gallery.
 class AlbumThumbnailProvider extends ImageProvider<AlbumThumbnailProvider> {

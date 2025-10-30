@@ -3,7 +3,7 @@
 Rename package to photo_gallery_plus.
 
 *Breaking changes:
-• Change import path to "package:photo_gallery_plus/photo_gallery.dart"
+• Change import path to "package:photo_gallery_plus/photo_gallery_plus.dart"
 • Update asset paths to "packages/photo_gallery_plus/images/grey.bmp"
 
 Update iOS podspec and Android settings.
