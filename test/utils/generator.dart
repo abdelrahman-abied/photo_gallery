@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:photo_gallery/photo_gallery.dart';
+import 'package:photo_gallery_plus/photo_gallery.dart';
 
 class Generator {
   static dynamic generateAlbumsJson({

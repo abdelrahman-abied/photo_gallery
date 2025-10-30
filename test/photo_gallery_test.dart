@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:photo_gallery/photo_gallery.dart';
+import 'package:photo_gallery_plus/photo_gallery.dart';
 
 import 'utils/generator.dart';
 import 'utils/mock_handler.dart';

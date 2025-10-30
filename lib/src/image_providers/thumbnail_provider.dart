@@ -54,7 +54,7 @@ class ThumbnailProvider extends ImageProvider<ThumbnailProvider> {
       buffer = await ui.ImmutableBuffer.fromUint8List(Uint8List.fromList(data));
     } catch (e) {
       buffer = await ui.ImmutableBuffer.fromAsset(
-        "packages/photo_gallery/images/grey.bmp",
+        "packages/photo_gallery_plus/images/grey.bmp",
       );
     }
     return decode(buffer);

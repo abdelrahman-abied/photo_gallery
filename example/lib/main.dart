@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:photo_gallery/photo_gallery.dart';
+import 'package:photo_gallery_plus/photo_gallery.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:video_player/video_player.dart';
 
@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Photo gallery example'),
         ),
         body: _loading
-            ? Center(
+            ? const Center(
                 child: CircularProgressIndicator(),
               )
             : LayoutBuilder(
@@ -75,7 +75,7 @@ class _MyAppState extends State<MyApp> {
                   double gridHeight = gridWidth + 33;
                   double ratio = gridWidth / gridHeight;
                   return Container(
-                    padding: EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
                     child: GridView.count(
                       childAspectRatio: ratio,
                       crossAxisCount: 3,
@@ -110,12 +110,12 @@ class _MyAppState extends State<MyApp> {
                                 ),
                                 Container(
                                   alignment: Alignment.topLeft,
-                                  padding: EdgeInsets.only(left: 2.0),
+                                  padding: const EdgeInsets.only(left: 2.0),
                                   child: Text(
                                     album.name ?? "Unnamed Album",
                                     maxLines: 1,
                                     textAlign: TextAlign.start,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       height: 1.2,
                                       fontSize: 16,
                                     ),
@@ -123,11 +123,11 @@ class _MyAppState extends State<MyApp> {
                                 ),
                                 Container(
                                   alignment: Alignment.topLeft,
-                                  padding: EdgeInsets.only(left: 2.0),
+                                  padding: const EdgeInsets.only(left: 2.0),
                                   child: Text(
                                     album.count.toString(),
                                     textAlign: TextAlign.start,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       height: 1.2,
                                       fontSize: 12,
                                     ),
@@ -181,7 +181,7 @@ class _AlbumPageState extends State<AlbumPage> {
       home: Scaffold(
         appBar: AppBar(
           leading: IconButton(
-            icon: Icon(Icons.arrow_back_ios),
+            icon: const Icon(Icons.arrow_back_ios),
             onPressed: () => Navigator.of(context).pop(),
           ),
           title: Text(widget.album.name ?? "Unnamed Album"),
@@ -233,7 +233,7 @@ class ViewerPage extends StatelessWidget {
         appBar: AppBar(
           leading: IconButton(
             onPressed: () => Navigator.of(context).pop(),
-            icon: Icon(Icons.arrow_back_ios),
+            icon: const Icon(Icons.arrow_back_ios),
           ),
           title: date != null ? Text(date.toLocal().toString()) : null,
         ),

@@ -1,9 +1,5 @@
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint photo_gallery.podspec' to validate before publishing.
-#
 Pod::Spec.new do |s|
-  s.name             = 'photo_gallery'
+  s.name             = 'photo_gallery_plus'
   s.version          = '0.0.1'
   s.summary          = 'A Flutter plugin that retrieves images and videos from mobile native gallery.'
   s.description      = <<-DESC

@@ -1,12 +1,12 @@
 # Photo Gallery
 
-[![pub package](https://img.shields.io/pub/v/photo_gallery.svg)](https://pub.dev/packages/photo_gallery)
+[![pub package](https://img.shields.io/pub/v/photo_gallery_plus.svg)](https://pub.dev/packages/photo_gallery_plus)
 
 A Flutter plugin that retrieves images and videos from mobile native gallery.
 
 ## Installation
 
-First, add photo_gallery as a [dependency in your pubspec.yaml file](https://flutter.dev/docs/development/packages-and-plugins/using-packages).
+First, add photo_gallery_plus as a [dependency in your pubspec.yaml file](https://flutter.dev/docs/development/packages-and-plugins/using-packages).
 
 #### iOS
 Add the following keys to your *Info.plist* file, located in ```<project root>/ios/Runner/Info.plist```:
