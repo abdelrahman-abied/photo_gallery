@@ -1,4 +1,16 @@
-# 2.2.1
+# 2.3.0
+
+Rename package to photo_gallery_plus.
+
+*Breaking changes:
+• Change import path to "package:photo_gallery_plus/photo_gallery.dart"
+• Update asset paths to "packages/photo_gallery_plus/images/grey.bmp"
+
+Update iOS podspec and Android settings.
+
+Update README and example dependency key.
+
+## 2.2.1
 
 Upgrade ```flutter_lints``` dependency, and then lint code according to the ```public_member_api_docs``` and ```use_string_in_part_of_directives``` rule.
 
